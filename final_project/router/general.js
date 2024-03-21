@@ -5,15 +5,15 @@ let users = require("./auth_users.js").users;
 const public_users = express.Router();
 
 
-public_users.post("/register", (req,res) => {
-  //Write your code here
-  return res.status(300).json({message: "Yet to be implemented"});
+public_users.post("/register", (req, res) => {
+    //Write your code here
+    return res.status(300).json({message: "Yet to be implemented"});
 });
 
-// Get the book list available in the shop
+// Get the book list available in the shop | Exercise 2 1. - Practice Lab
 public_users.get('/',function (req, res) {
-  //Write your code here
-  return res.status(300).json({message: "Yet to be implemented"});
+    res.send(JSON.stringify(books, null, 4));
+    // Do I need this return res.status(300).json({message: "Yet to be implemented"});
 });
 
 // Get book details based on ISBN
