@@ -59,7 +59,6 @@ public_users.get('/author/:author',function (req, res) {
     const author = req.params.author;
     let filtered_authors = books.filter((books) => books.author === author);
     res.send(filtered_authors);
-    //return res.status(300).json({ message: "Yet to be implemented" });
 });
 
 // Get all books based on title
