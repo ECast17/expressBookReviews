@@ -91,7 +91,6 @@ public_users.get('/review/:isbn',function (req, res) {
     const isbn = req.params.isbn;
     let filtered_review = books.filter((books) => books.isbn === isbn);
     res.send(filtered_review);
-    //return res.status(300).json({message: "Yet to be implemented"});
 });
 
 module.exports.general = public_users;
